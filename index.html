@@ -6,13 +6,13 @@
   </head>
   <body>
     <h1>This is a Test</h1>
-    <button onclick="Test()">submit</button>
-    <p id="test"></p>
-    <script type="text/javascript">
-      function Test() {
-        document.getElementById("test").innerHTML = "this is red";
-        var red = document.getElementById("test");
-        red.style.color = "red";
+    <p>Type what you want to turn brown</p>
+    <input type="text" id="brown">
+    <button onclick="brown()">turn text brown</button>
+    <p id="results" class="brown"></p>
+    <script>
+      function brown() {
+        document.getElementById("results").innerHTML = document.getElementById("brown").value;
       }
     </script>
   </body>
