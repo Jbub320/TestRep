@@ -24,21 +24,38 @@
         document.getElementById("results").innerHTML = document.getElementById("brown").value;
       }
     </script>
-    <button type="button" onclick="showRed()">red</button>
+    <button type="button" onclick="showRed()">red</button> <br> <br>
     <script>
       function showRed() {
         document.getElementById("color red").style.display = "";
       }
     </script>
-      <div id="color red" style="display:none;">
-        <p>Type what your want to turn red.</p>
-        <input type="text" id="red">
-        <button onclick="red()">turn text red</button>
-        <p id="results2.0" class="red"></p>
-      </div>
+    <div id="color red" style="display:none;">
+      <p>Type what your want to turn red.</p>
+      <input type="text" id="red">
+      <button onclick="red()">turn text red</button>
+      <p id="results2.0" class="red"></p>
+    </div>
     <script>
       function red() {
         document.getElementById("results2.0").innerHTML = document.getElementById("red").value;
+      }
+    </script>
+    <button type="button" onclick="showBlue()">blue</button>
+    <script>
+      function showBlue() {
+        document.getElementById("color blue").style.display = "";
+      }
+    </script>
+    <div id="color blue" style="display:none;">
+      <p>Type what you want to turn blue</p>
+      <input type="text" id="blue">
+      <button onclick="blue()">turn text blue</button>
+      <p id="results3.0" class="blue"></p>
+    </div>
+    <script>
+      function blue() {
+        document.getElementById("results3.0").innerHTML = document.getElementById("blue").value;
       }
     </script>
   </body>
