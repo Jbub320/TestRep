@@ -7,14 +7,14 @@
   <body>
     <h1>This is a text color changer</h1>
     <h3>pic what color you want to change your text to.</h3>
-    <button type="button" onclick="showBrown()">brown</button>
+    <button type="button" onclick="showBrown()">brown</button> <br> <br>
     <script>
       function showBrown() {
         document.getElementById("color brown").style.display = "";
       }
     </script>
     <div id="color brown" style="display:none;">
-      <p>Type what you want to turn brown</p>
+      <p>Type what you want to turn brown.</p>
       <input type="text" id="brown">
       <button onclick="brown()">turn text brown</button>
       <p id="results" class="brown"></p>
@@ -22,6 +22,23 @@
     <script>
       function brown() {
         document.getElementById("results").innerHTML = document.getElementById("brown").value;
+      }
+    </script>
+    <button type="button" onclick="showRed()">red</button>
+    <script>
+      function showRed() {
+        document.getElementById("color red").style.display = "";
+      }
+    </script>
+      <div id="color red" style="display:none;">
+        <p>Type what your want to turn red.</p>
+        <input type="text" id="red">
+        <button onclick="red()">turn text red</button>
+        <p id="results2.0" class="red"></p>
+      </div>
+    <script>
+      function red() {
+        document.getElementById("results2.0").innerHTML = document.getElementById("red").value;
       }
     </script>
   </body>
