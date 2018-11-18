@@ -5,11 +5,20 @@
     <title>Test</title>
   </head>
   <body>
-    <h1>This is a Test</h1>
-    <p>Type what you want to turn brown</p>
-    <input type="text" id="brown">
-    <button onclick="brown()">turn text brown</button>
-    <p id="results" class="brown"></p>
+    <h1>This is a text color changer</h1>
+    <h3>pic what color you want to change your text to.</h3>
+    <button type="button" onclick="showBrown()">brown</button>
+    <script>
+      function showBrown() {
+        document.getElementById("color brown").style.display = "";
+      }
+    </script>
+    <div id="color brown" style="display:none;">
+      <p>Type what you want to turn brown</p>
+      <input type="text" id="brown">
+      <button onclick="brown()">turn text brown</button>
+      <p id="results" class="brown"></p>
+    </div>
     <script>
       function brown() {
         document.getElementById("results").innerHTML = document.getElementById("brown").value;
