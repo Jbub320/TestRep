@@ -7,7 +7,7 @@
   <body>
     <h1>This is a text color changer</h1>
     <h3>pic what color you want to change your text to.</h3>
-    <button type="button" onclick="showBrown()">brown</button> <br> <br>
+    <button type="button" onclick="showBrown()">brown</button> <br>
     <script>
       function showBrown() {
         document.getElementById("color brown").style.display = "";
@@ -24,7 +24,7 @@
         document.getElementById("results").innerHTML = document.getElementById("brown").value;
       }
     </script>
-    <button type="button" onclick="showRed()">red</button> <br> <br>
+    <button type="button" onclick="showRed()">red</button> <br>
     <script>
       function showRed() {
         document.getElementById("color red").style.display = "";
@@ -41,7 +41,7 @@
         document.getElementById("results2.0").innerHTML = document.getElementById("red").value;
       }
     </script>
-    <button type="button" onclick="showBlue()">blue</button>
+    <button type="button" onclick="showBlue()">blue</button> <br>
     <script>
       function showBlue() {
         document.getElementById("color blue").style.display = "";
@@ -56,6 +56,23 @@
     <script>
       function blue() {
         document.getElementById("results3.0").innerHTML = document.getElementById("blue").value;
+      }
+    </script>
+    <button type="button" onclick="showOrange()">orange</button>
+    <script>
+      function showOrange() {
+        document.getElementById("color orange").style.display = "";
+      }
+    </script>
+    <div id="color orange" style="display:none;">
+      <p>Type what you want to turn orange.</p>
+      <input type="text" id="orange">
+      <button onclick="orange()">turn text orange</button>
+      <p id="results4.0" class="orange"></p>
+    </div>
+    <script>
+      function orange() {
+        document.getElementById("results4.0").innerHTML = document.getElementById("orange").value;
       }
     </script>
   </body>
