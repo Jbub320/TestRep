@@ -32,7 +32,7 @@
     </script>
     <div id="color red" style="display:none;">
       <p>Type what your want to turn red.</p>
-      <input type="text" id="red">
+      <input type="text" id="red">C:\Users\jbub3\Desktop\TestRep\index.html
       <button onclick="red()">turn text red</button>
       <p id="results2.0" class="red"></p>
     </div>
@@ -58,7 +58,7 @@
         document.getElementById("results3.0").innerHTML = document.getElementById("blue").value;
       }
     </script>
-    <button type="button" onclick="showOrange()">orange</button>
+    <button type="button" onclick="showOrange()">orange</button> <br>
     <script>
       function showOrange() {
         document.getElementById("color orange").style.display = "";
@@ -73,6 +73,23 @@
     <script>
       function orange() {
         document.getElementById("results4.0").innerHTML = document.getElementById("orange").value;
+      }
+    </script>
+    <button type="button" onclick="showYellow()">yellow</button>
+    <script>
+      function showYellow() {
+        document.getElementById("color yellow").style.display = "";
+      }
+    </script>
+    <div id="color yellow" style="display:none;">
+      <p>Type what you want to turn yellow</p>
+      <input type="text" id="yellow">
+      <button type="button" onclick="yellow()">turn text yellow</button>
+      <p id="results5.0" class="yellow"></p>
+    </div>
+    <script>
+      function yellow() {
+        document.getElementById("results5.0").innerHTML = document.getElementById("yellow").value;
       }
     </script>
   </body>
